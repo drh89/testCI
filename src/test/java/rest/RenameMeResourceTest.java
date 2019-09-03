@@ -42,7 +42,7 @@ public class RenameMeResourceTest {
 
     @BeforeAll
     public static void setUpClass() {
-        emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST, Strategy.CREATE);
+        emf = EMF_Creator.createEntityManagerFactory(DbSelector.TEST, Strategy.DROP_AND_CREATE);
 
         //NOT Required if you use the version of EMF_Creator.createEntityManagerFactory used above        
         //System.setProperty("IS_TEST", TEST_DB);
